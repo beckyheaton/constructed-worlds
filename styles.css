@@ -1,0 +1,73 @@
+/* General Reset: This removes default margin, padding, and sets box-sizing to avoid layout inconsistencies */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Open Sans Regular";
+    src: url("../constructed-worlds/ACaslonPro-Regular.otf") format("opentype");
+}
+
+/* Basic styles for the body element */
+body {
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 30px; /* Increases the space between lines for readability */
+    color: rgb(38, 56, 219); /* Sets text color*/
+    text-transform: lowercase;
+    background-color: rgb(250, 242, 218); /* Sets background color */
+}
+
+/* Styling for the header */
+header {
+    text-align: center; /* Centers the header text */
+    font-weight: normal;
+    padding: 50px 0; /* The first value is for the top and bottom, and the second is for the left and right. px (pixels) is a unit that is independent of the element size. */
+}
+
+h1, h4{
+    font-weight: normal;
+}
+
+
+/* Welcome Message */
+#info {
+    position: fixed;
+    padding: 30px 30px;
+    top: 500px;
+    left: 50%;
+    text-align: left;
+    transform: translateX(-50%); /* Shift the container left by 50% of its own width */
+}
+
+#what {
+    position: fixed;
+    padding: 200px 0;
+    text-align: center;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);  /* Shift the container left by 50% of its own width */
+}
+
+#aPromise {
+    position: fixed;
+    padding: 2em;
+    font-style: italic;
+    text-align: left;
+    top: 60%;
+    left: 30%;
+}
+
+/* April Blossom */
+#aprilBlossom2 {
+    position: fixed;
+    width: 400px; /* Change width */
+    height: auto; /* Preserve the aspect ratio */
+    top: 180px;
+    left: 50%;
+    transform: translateX(-50%);  /* Shift the container left by 50% of its own width */
+}
+
+
