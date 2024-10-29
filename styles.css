@@ -14,9 +14,9 @@ body {
     font-size: 17px;
     letter-spacing: 1px;
     line-height: 30px; 
-    color: rgb(6, 27, 221); 
+    color: rgb(4, 0, 255); 
     text-transform: lowercase;
-    background-color: rgb(253, 252, 246); 
+    background-color: rgb(255, 252, 243); 
 }
 
 header {
@@ -41,6 +41,7 @@ h4 {
     padding-top: 0;
     left: 50%;
     transform: translateX(-50%); 
+    /* outline: 1px solid rgb(4, 0, 255); */
 }
 
 #marqueeContainer {
