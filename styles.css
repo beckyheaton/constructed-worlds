@@ -10,64 +10,72 @@
     src: url("../constructed-worlds/ACaslonPro-Regular.otf") format("opentype");
 }
 
-/* Basic styles for the body element */
 body {
     font-size: 17px;
     letter-spacing: 1px;
-    line-height: 30px; /* Increases the space between lines for readability */
-    color: rgb(38, 56, 219); /* Sets text color*/
+    line-height: 30px; 
+    color: rgb(6, 27, 221); 
     text-transform: lowercase;
-    background-color: rgb(250, 242, 218); /* Sets background color */
+    background-color: rgb(253, 252, 246); 
 }
 
-/* Styling for the header */
 header {
-    text-align: center; /* Centers the header text */
+    text-align: center;
     font-weight: normal;
-    padding: 50px 0; /* The first value is for the top and bottom, and the second is for the left and right. px (pixels) is a unit that is independent of the element size. */
+    padding-top: 50px; /* The first value is for the top and bottom, and the second is for the left and right. px (pixels) is a unit that is independent of the element size. */
 }
 
 h1, h4{
     font-weight: normal;
 }
 
-
-/* Welcome Message */
-#info {
-    position: fixed;
-    padding: 30px 30px;
-    top: 500px;
-    left: 50%;
-    text-align: left;
-    transform: translateX(-50%); /* Shift the container left by 50% of its own width */
+h4 {
+    padding-top: 30px;
+    padding-bottom: 0;
 }
 
-#what {
+#info {
     position: fixed;
-    padding: 200px 0;
-    text-align: center;
-    top: 0;
+    padding: 0;
+    top: 577.5px;
     left: 50%;
-    transform: translateX(-50%);  /* Shift the container left by 50% of its own width */
+    text-align: left;
+    transform: translateX(-50%); 
+}
+
+#marqueeContainer {
+    position: fixed;
+    top: 507.5px;
+    left: 50%;
+    width: 600px;
+    overflow: hidden; /* Hides the text outside of the container */
+    transform: translateX(-50%);
+    white-space: nowrap; /* Prevents the text from wrapping to the next line */
 }
 
 #aPromise {
-    position: fixed;
-    padding: 2em;
+    display: inline-block; /* Allows the paragraph to scroll smoothly */
+    padding: 20px;
     font-style: italic;
-    text-align: left;
-    top: 60%;
-    left: 30%;
+    animation: scrollText 120s linear infinite;
 }
 
-/* April Blossom */
-#aprilBlossom2 {
+@keyframes scrollText {
+    from {
+        transform: translateX(0); /* Start at normal position */
+    }
+    to {
+        transform: translateX(-100%); /* Move left by 100% width of content */
+    }
+}
+
+#video {
     position: fixed;
-    width: 400px; /* Change width */
+    width: 600px; 
     height: auto; /* Preserve the aspect ratio */
-    top: 180px;
+    padding-top: 0;
     left: 50%;
-    transform: translateX(-50%);  /* Shift the container left by 50% of its own width */
+    transform: translateX(-50%); 
 }
 
 
