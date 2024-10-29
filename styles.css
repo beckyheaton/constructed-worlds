@@ -34,20 +34,11 @@ h4 {
     padding-bottom: 0;
 }
 
-#info {
-    position: fixed;
-    padding: 0;
-    top: 577.5px;
-    left: 50%;
-    text-align: left;
-    transform: translateX(-50%); 
-}
-
 #marqueeContainer {
     position: fixed;
     top: 507.5px;
     left: 50%;
-    width: 600px;
+    width: 100vw
     overflow: hidden; /* Hides the text outside of the container */
     transform: translateX(-50%);
     white-space: nowrap; /* Prevents the text from wrapping to the next line */
@@ -55,7 +46,7 @@ h4 {
 
 #aPromise {
     display: inline-block; /* Allows the paragraph to scroll smoothly */
-    padding: 20px;
+    padding: 30px;
     font-style: italic;
     animation: scrollText 120s linear infinite;
 }
@@ -76,6 +67,14 @@ h4 {
     padding-top: 0;
     left: 50%;
     transform: translateX(-50%); 
+}
+
+#info {
+    position: fixed;
+    padding: 0;
+    top: 587.5px;
+    left: 30%;
+    text-align:left;
 }
 
 
