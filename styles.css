@@ -114,6 +114,7 @@ h4 {
     #marqueeContainer {
         padding: 0;
         top: 420px;
+        font-size: 12px;
     }
 
     #aPromise {
