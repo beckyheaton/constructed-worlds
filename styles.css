@@ -129,7 +129,7 @@ h4 {
     #infoMobile {
         display: block;
         position: absolute;
-        top: calc(420px + 40px); /* Adjust 50px to add margin below #marqueeContainer */
+        top: calc(420px + 50px); /* Adjust 50px to add margin below #marqueeContainer */
         font-size: 14px;
         left: 50%;
         text-align: left;
