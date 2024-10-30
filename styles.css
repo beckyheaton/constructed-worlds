@@ -85,4 +85,50 @@ h4 {
     text-decoration: underline;
 }
 
+/* Responsive Design for Mobile Screens */
+@media (max-width: 768px) {
+    body {
+        font-size: 12px;
+    }
+    
+    header {
+        padding-top: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 12px;
+        padding-top: 20px;
+    }
+
+    #info {
+        font-size: 14px;
+        padding: 5px;
+        white-space: normal;
+    }
+
+    #video {
+        width: 100%;
+        outline: none;
+    }
+
+
+
+    #marqueeContainer {
+        padding: 5px;
+        top: 400px;
+    }
+
+    #aPromise {
+        font-size: 12px;
+        top: 
+        padding: 10px;
+        animation: scrollText 90s linear infinite; /* Slow down on smaller screens */
+    }
+}
+
+
 
