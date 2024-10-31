@@ -4,21 +4,14 @@
 <!-- The <html> element represents the root of an HTML document -->
 
 <head>
-    <!-- The <head> element contains meta information about the document -->
     <meta charset="UTF-8">
-    <!-- Specifies the character encoding for the document -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Ensures the website is responsive on mobile devices by controlling the layout on different screen sizes -->
     <title>constructed worlds</title>
-    <!-- The title of the page that appears in the browser tab -->
     <link rel="stylesheet" href="styles.css">
-    <!-- Links the external CSS file for styling the page -->
     <script defer src="scripts.js"></script> 
-    <!-- Links the external JavaScript file to add functionality to the webpage -->
 </head>
 
 <body>
-    <!-- The <body> element contains the content that will be displayed on the webpage -->
 
     <header>
         <h1>Constructed Worlds</h1>
@@ -67,15 +60,22 @@
             Your browser does not support the video tag.
         </video>
 
-        <audio id="snowFalling" autoplay loop>
+        <audio id="snowFalling" loop>
             <source src="snowFalling.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
 
+        <script>
+            // Function to play audio on the first click
+            function playAudioOnClick() {
+                const audio = document.getElementById("snowFalling");
+                audio.play();
+                document.body.removeEventListener("click", playAudioOnClick); // Remove listener after first click
+            }
+            document.body.addEventListener("click", playAudioOnClick);
+        </script>
+
     </main>
-
-
 </body>
-
 </html>
 
