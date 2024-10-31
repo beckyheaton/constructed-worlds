@@ -5,6 +5,8 @@
     box-sizing: border-box;
 }
 
+
+
 @font-face {
     font-family: "Open Sans Regular";
     src: url("../constructed-worlds/ACaslonPro-Regular.otf") format("opentype");
@@ -105,8 +107,8 @@ h4 {
 
     h4 {
         font-size: 12px;
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 10vw;
+        padding-right: 10vw;
     }
 
     #video {
@@ -131,13 +133,11 @@ h4 {
     #infoMobile {
         display: block;
         position: absolute;
-        top: calc(420px + 100px); /* Adjust 50px to add margin below #marqueeContainer */
-        font-size: 14px;
-        left: 50%;
+        top: calc(420px + 70px); /* Adjust 50px to add margin below #marqueeContainer */
+        font-size: 12px;
+        left: 10vw;
         text-align: left;
-        transform: translateX(-50%); 
         white-space: nowrap;
-        padding-left: 10%;
     }
 }
 
