@@ -1,0 +1,52 @@
+/* Responsive Design for Mobile Screens */
+@media (max-width: 768px) {
+
+    
+
+    body {
+        font-size: 12px;
+    }
+    
+    header {
+        top: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 12px;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+    #video {
+        width: 70%;
+    }
+
+    #marqueeContainer {
+        padding: 0;
+        top: 420px;
+    }
+
+    #aPromise {
+        font-size: 1em;
+        animation: scrollText 200s linear infinite; /* Slow down on smaller screens */
+        padding: 0;
+    }
+
+    #info {
+        display: none;
+    }
+
+    #infoMobile {
+        display: block;
+        position: absolute;
+        top: calc(420px + 70px); /* Adjust 50px to add margin below #marqueeContainer */
+        font-size: 12px;
+        left: 10vw;
+        text-align: left;
+        white-space: nowrap;
+    }
+}
