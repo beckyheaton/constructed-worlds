@@ -127,6 +127,7 @@ h4 {
         font-size: 12px;
         padding-right: 10vw;
         padding-left: 10vw;
+        padding-bottom: unset;
     }
 
     #video {
